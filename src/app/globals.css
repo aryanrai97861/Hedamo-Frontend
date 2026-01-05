@@ -46,6 +46,39 @@
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
+/* Dark Mode */
+[data-theme='dark'] {
+  --background: #0f0f0f;
+  --background-subtle: #1a1a1a;
+  --background-hover: #262626;
+  
+  --foreground: #e6e6e6;
+  --text-secondary: #a0a0a0;
+  --text-tertiary: #737373;
+  
+  --primary: #3b82f6;
+  --primary-hover: #60a5fa;
+  --primary-light: #1e3a5f;
+  
+  --border: #2a2a2a;
+  --border-strong: #3a3a3a;
+  
+  /* Status Colors - Dark Mode */
+  --status-draft-bg: #262626;
+  --status-draft-text: #a0a0a0;
+  
+  --status-submitted-bg: #0c2d3a;
+  --status-submitted-text: #67c3e0;
+  
+  --status-published-bg: #1a3a23;
+  --status-published-text: #6dd88d;
+  
+  /* Shadows - Dark Mode */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -69,6 +102,7 @@ body {
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {

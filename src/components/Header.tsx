@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import ThemeToggle from './ThemeToggle';
 import styles from './Header.module.css';
 
 export default function Header() {
@@ -10,9 +11,12 @@ export default function Header() {
                     <span className={styles.divider}>|</span>
                     <span className={styles.subtitle}>Institutional Disclosure System</span>
                 </Link>
-                <div className={styles.user}>
-                    <div className={styles.avatar}>A</div>
-                    <span className={styles.username}>Admin View</span>
+                <div className={styles.actions}>
+                    <ThemeToggle />
+                    <div className={styles.user}>
+                        <div className={styles.avatar}>A</div>
+                        <span className={styles.username}>Admin View</span>
+                    </div>
                 </div>
             </div>
         </header>

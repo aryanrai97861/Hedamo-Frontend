@@ -1,5 +1,5 @@
 .header {
-    background: white;
+    background: var(--background);
     border-bottom: 1px solid var(--border);
     height: 64px;
     display: flex;
@@ -7,6 +7,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .container {
@@ -36,6 +37,12 @@
 .subtitle {
     color: var(--text-secondary);
     font-size: 14px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
 }
 
 .user {
