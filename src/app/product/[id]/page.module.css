@@ -1,0 +1,126 @@
+.nav {
+    padding: var(--space-6) 0;
+}
+
+.backLink {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+    padding: var(--space-2) var(--space-3);
+    border-radius: var(--radius-sm);
+    display: inline-block;
+    transition: color 0.18s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backLink:hover {
+    color: var(--primary);
+    background-color: var(--background-hover);
+}
+
+.backLink:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    color: var(--primary);
+}
+
+.header {
+    margin-bottom: var(--space-6);
+}
+
+.titleRow {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin-bottom: var(--space-2);
+}
+
+.titleRow h1 {
+    font-size: 28px;
+    letter-spacing: -0.5px;
+}
+
+.status {
+    font-size: 13px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.producer {
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+
+.disclaimer {
+    background: #fff8e6;
+    /* Light yellow warning bg */
+    border: 1px solid #ffe8cc;
+    border-left: 4px solid #fab005;
+    padding: var(--space-4);
+    margin-bottom: var(--space-8);
+    border-radius: var(--radius-sm);
+    color: #8c5e00;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.section {
+    margin-bottom: var(--space-8);
+}
+
+.section h2 {
+    font-size: 20px;
+    margin-bottom: var(--space-4);
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid var(--border);
+}
+
+.text {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.card {
+    background: var(--background-subtle);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: var(--space-4);
+}
+
+.detailRow {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+}
+
+.detailRow:last-child {
+    border-bottom: none;
+}
+
+.label {
+    color: var(--text-tertiary);
+}
+
+.value {
+    color: var(--foreground);
+    font-weight: 500;
+}
